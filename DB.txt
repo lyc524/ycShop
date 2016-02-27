@@ -1,0 +1,19 @@
+CREATE TABLE `product` (
+  `productID` int(11) NOT NULL,
+  `Name` varchar(45) DEFAULT NULL,
+  `Category` varchar(45) DEFAULT NULL,
+  `Price` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`productID`),
+  UNIQUE KEY `productID_UNIQUE` (`productID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE `user` (
+  `userName` varchar(10) NOT NULL,
+  `userPwd` varchar(45) DEFAULT NULL,
+  `Email` varchar(45) DEFAULT NULL,
+  `Tel` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`userName`),
+  UNIQUE KEY `userName_UNIQUE` (`userName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
