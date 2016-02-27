@@ -1,1 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<database-conf>
+<datasource>
+<driver></driver>
+<url></url>
+<user>root</user>
+<pwd>123456</pwd>
+</datasource>
+</database-conf>
