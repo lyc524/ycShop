@@ -6,24 +6,24 @@ import java.util.Properties;
 
 public class DataAccess {
 
-	private static String driver;
-	private static String url;
-	private static String user;
-	private static String pwd;	
+	private static String driver="com.mysql.jdbc.Driver";
+	private static String url="jdbc:mysql://localhost:3306/yc";
+	private static String user="root";
+	private static String pwd="123456";	
 	
 	static{
-		DatabaseConfigParsers dcp=new DatabaseConfigParsers();
-		try{
-			dcp.parse("database.conf.xml");
-			Properties dbPro=dcp.getProps();
-			driver=dbPro.getProperty(driver);
-			url=dbPro.getProperty(url);
-			user=dbPro.getProperty(user);
-			pwd=dbPro.getProperty(pwd);
-			
-		}catch(Exception ex){
-			ex.printStackTrace();
-		}
+//		DatabaseConfigParsers dcp=new DatabaseConfigParsers();
+//		try{
+//			dcp.parse("database.conf.xml");
+//			Properties dbPro=dcp.getProps();
+//			driver=dbPro.getProperty(driver);
+//			url=dbPro.getProperty(url);
+//			user=dbPro.getProperty(user);
+//			pwd=dbPro.getProperty(pwd);
+//			
+//		}catch(Exception ex){
+//			ex.printStackTrace();
+//		}
 		
 	}
 	
